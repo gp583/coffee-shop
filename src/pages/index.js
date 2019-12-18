@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FaGulp } from "react-icons/fa"
+import { GiCaesar } from "react-icons/gi"
 
 const IndexPage = () => (
   <Layout>
