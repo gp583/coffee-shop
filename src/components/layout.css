@@ -30,10 +30,52 @@ h6 {
   color: var(--mainGold);
 }
 
+.btn-gold {
+  color: var(--mainGold);
+  border-color: var(--mainGold);
+  transition: background-color 3s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--mainDark);
+  color: var(--mainGold);
+}
+
 .cart-icon {
   cursor: pointer;
   color: var(--mainGold);
   font-size: 1.5rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 6rem;
+}
+
+.sub-title {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-family: "Italiana", serif;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background: black;
+  min-height: 10vh;
+  color: var(--mainGold);
 }
 
 .link {
@@ -64,7 +106,7 @@ h6 {
   }
 
   .nav-item:last-child {
-    padding-left: 25px;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
