@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
-import { FaCart } from "react-icons/fa"
+import { IconContext } from "react-icons"
+import { FaBars } from "react-icons/fa"
 import { FaCartArrowDown } from "react-icons/fa"
 import { GiCaesar } from "react-icons/gi"
 import "../layout.css"
@@ -46,7 +47,7 @@ export default class Navbar extends Component {
           type="button"
           onClick={this.navbarHandler}
         >
-          <span className="navbar-toggler-icon" />
+          <FaBars color="#c5b358" />
         </button>
         <div className={this.state.css}>
           <ul className="navbar-nav ml-auto">

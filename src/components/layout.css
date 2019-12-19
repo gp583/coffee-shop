@@ -61,12 +61,6 @@ h6 {
   font-size: 6rem;
 }
 
-.sub-title {
-  font-family: "Caesar Dressing", cursive;
-  font-size: 4.5rem;
-  margin-bottom: 1rem;
-}
-
 .quote {
   font-family: "Italiana", serif;
   padding-bottom: 1rem;
@@ -76,6 +70,11 @@ footer {
   background: black;
   min-height: 10vh;
   color: var(--mainGold);
+}
+
+footer h3 {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 2rem;
 }
 
 .link {
@@ -115,13 +114,7 @@ footer {
     padding-left: 10px;
   }
 
-  .sub-title {
-    font-size: 2.5rem;
-    padding-bottom: 400px;
-  }
-
-  .logo {
-    margin-left: 0px;
-    padding-left: 0px;
+  .title {
+    font-size: 5rem;
   }
 }
