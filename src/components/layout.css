@@ -110,6 +110,10 @@ footer h3 {
   line-height: 50px;
 }
 
+.menu {
+  background-color: var(--mainDark);
+}
+
 @media only screen and (max-width: 576px) {
   .nav-item:first-child {
     padding-top: 15px;

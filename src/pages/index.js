@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Globals/Hero"
 import Footer from "../components/Globals/Footer"
 import Info from "../components/Home/Info"
+import Menu from "../components/Home/Menu"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
+    <Menu items={data.menu} />
     <Footer />
   </Layout>
 )
@@ -26,6 +28,42 @@ export const query = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    menu: allContentfulCoffeeItem(sort: { fields: category, order: ASC }) {
+      edges {
+        node {
+          id
+          title
+          price
+          category
+          description {
+            description
+          }
+          image {
+            fixed(width: 50, height: 50) {
+              src
+            }
+          }
+        }
+      }
+    }
+    menu: allContentfulCoffeeItem(sort: { fields: category, order: ASC }) {
+      edges {
+        node {
+          id
+          title
+          price
+          category
+          description {
+            description
+          }
+          image {
+            fixed(width: 50, height: 50) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
         }
       }
     }
