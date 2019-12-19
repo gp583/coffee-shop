@@ -39,11 +39,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
         <Link to="/">
-          <GiCaesar
-            size="50px"
-            color="#c5b358"
-            style={{ marginLeft: "10px" }}
-          />
+          <GiCaesar size="50px" color="#c5b358" />
         </Link>
         <button
           className="navbar-toggler"
