@@ -8,7 +8,7 @@ const Info = () => {
     <section className="py-5">
       <div className="container">
         <div className="row">
-          <div className="col-10 col-sm-8 mx-auto text-center">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-10 mx-auto text-center">
             <Title title="our story" />
             <h4 className="quote">Et Tu, Cafe?</h4>
             <GiLaurels
@@ -23,7 +23,7 @@ const Info = () => {
               aut ratione provident assumenda a. Quis, perspiciatis.
             </p>
             <Link to="/about/">
-              <button className="btn text-uppercase btn-gold">about</button>
+              <button className="btn text-capitalize btn-gold">about</button>
             </Link>
           </div>
         </div>

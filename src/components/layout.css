@@ -78,7 +78,7 @@ h6 {
 }
 
 footer {
-  background: black;
+  background: var(--mainWhite);
   min-height: 10vh;
   color: var(--mainGold);
 }
@@ -112,6 +112,11 @@ footer h3 {
 
 .menu {
   background-color: var(--mainDark);
+}
+
+.contact {
+  background-color: #000;
+  color: var(--mainGold);
 }
 
 @media only screen and (max-width: 576px) {
